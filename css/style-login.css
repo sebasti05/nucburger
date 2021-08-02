@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+--background-start:hsla(10, 100%, 56%, 0.459);
+--background-end:hsla(8, 25%, 62%, 0.664);
+--gray-color: #eee;
+--input-color: #e4eff8;
+--label-color: #999;
+--login-button: #ff441f;
+}
+::before,
+::after,
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Poppins',sans-serif;
+background: linear-gradient(to right, var(--background-start), var(--background-end)),
+url(../img/portada.jpg);
+ background-size: cover;
+margin: 0;
+height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .content {
+    background-color: #fff;
+    padding: 30px 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+}
+.content button {
+      padding: 15px;
+      width: 150px;
+      border: 1px solid var(--gray-color);
+      background: transparent;
+      border-radius: 50px;
+      color: #333;
+      cursor: pointer;
+    }
+
+.content button:focus {
+        outline: none;
+      }
+    
+header {
+      text-align: center;}
+header h1 {
+        margin-top: 15px;
+        font-size: 210%;
+      }
+header .avatar{
+    background: #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:40px;
+    left: calc(50% - 50px);
+
+
+}
+    
+.social-login {
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+    }
+.social-login a{
+    padding-left: 20px;
+    color: var(--input-color);
+}
+.social-login a:hover{
+    color: var(--login-button);
+}
+
+.social-login  button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.5s;
+       }
+.social-login button:first-child {
+          margin-right: 10px;
+        }
+.social-login button:hover {
+          background-color: var(--gray-color);
+        }
+.social-login span {
+          font-size: 17px;
+          color: #777;
+          margin-left: 5px;
+        }
+      
+    
+.login-form {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+.input-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 310px;
+    }
+
+.input-group  input {
+          padding: 15px;
+          font-size: 13px;
+          border: 1px solid var(--input-color);
+          background-color: var(--input-color);
+          border-radius: 50px;
+          transition: border 0.5s;
+         }
+    
+.input-group  input:focus {
+            outline: 0;
+            border-color: var(--background-end);
+          }
+        
+.input-group label {
+          color: var(--label-color);
+          font-size: 12px;
+          margin-bottom: 3px;
+          margin-left: 16px;
+        }
+.input-group button {
+          background-color: var(--login-button);
+          border: unset;
+          color: #fff;
+          align-self: center;
+          margin-top: 15px;
+          transition: background 0.5s;
+      }
+.input-group button:hover {
+            background-color: var(--background-start);}
+    
+footer {
+      padding-top: 15px;
+      text-align: center;}
+footer  a {
+        color: #999;
+        text-decoration: none;
+        font-size: 11px;
+      }
+
+
+@media screen and (max-width: 720px) {
+  .wrapper .content{
+     
+      padding-right: 0;
+      padding-left: 0;
+      margin: 0 10px;
+    }
+  }
+
